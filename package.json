@@ -1,5 +1,5 @@
 {
-  "name": "randompic",
+  "name": "shuffle",
   "version": "1.0.0",
   "description": "A lorem picsum like local image server built with nodejs.",
   "main": "app.js",

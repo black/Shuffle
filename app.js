@@ -1,13 +1,15 @@
 const express = require('express'),
+     cors = require('cors'),
     walk = require('walk'),
     app = express(),
     ALLfiles = [];
 
 app.listen(9091, () => {
-    console.log("Random Picture 9091");
+    console.log("http://localhost:9091/default - Random Picture 9091");
     getAllfiles();
 });
 
+app.use(cors())
 app.use(express.static('pictures'));
 
 app.get('/:imgtag', (req, res) => {
